@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tvseriewsdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password:
+    dbcp2:
+      max-total: 50
+      max-idle: 20
+      max-wait-millis: 10000
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: UTC
+    serialization:
+      write-dates-as-timestamps: false  #Ϊtrue��ʾʱ���
+
+logging:
+  file: target/app.log
+  level:
+    root: info
+
+#�շ�������false
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: false
