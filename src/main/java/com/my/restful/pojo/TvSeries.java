@@ -7,6 +7,9 @@ import java.util.Date;
 @Data
 public class TvSeries {
 
+    /**
+     * 数据id
+     */
     private int id;
     private String name;
     private int seasonCount;
