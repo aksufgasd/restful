@@ -31,7 +31,7 @@ public class TvSeriesController {
         tvSeriess.add(new TvSeries(3,"third",300,new Date(System.currentTimeMillis())));
 
 
-        //从数据查询阿
+        //从数据查询
         tvSeriess = tvSeriesService.getAll();
 
         return tvSeriess;
