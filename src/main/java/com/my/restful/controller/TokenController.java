@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/token")
+@RequestMapping("/tokens")
 public class TokenController {
 
 
